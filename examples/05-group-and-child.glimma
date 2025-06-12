@@ -1,0 +1,9 @@
+scene demo {
+  group parent {
+    shape box rect x=10 y=10 width=40 height=40 fill="#6699cc"
+    shape child circle cx=30 cy=30 r=10 fill="#88cc88"
+  }
+  timeline:
+    0s: parent fadeIn over 0.5s
+    0.5s: child fadeOut over 0.5s
+}
