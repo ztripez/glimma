@@ -2,7 +2,7 @@
 
 **Plain‑text animation language — Markdown for motion**
 
-Glimma lets you storyboard lightweight SVG/CSS animations in the same way Markdown lets you write documents. One `.glimma` file defines shapes, groups, scenes and timelines; the CLI turns it into a self‑contained HTML animation that plays in any modern browser.
+Glimma lets you storyboard lightweight SVG/CSS animations in the same way Markdown lets you write documents. One `.glimma` file defines shapes, groups, scenes and timelines; the CLI turns it into a self-contained SVG animation by default (add `--html` to wrap in an HTML page).
 
 > *If adding a feature makes the script harder to read than the concept it explains, drop it.* — Glimma founding rule
 
@@ -45,17 +45,28 @@ scene Intro {
 Build & preview:
 
 ```bash
-glimma build hello.glimma -o hello.html
-open hello.html   # on macOS; or just double‑click in Finder
+glimma build hello.glimma -o hello.svg
+open hello.svg   # on macOS; or just double-click in Finder
 ```
+
+Add `--html` if you want an HTML wrapper instead of raw SVG.
 
 ---
 
 ## CLI cheatsheet
 
+
+## Building from source
+
+```bash
+npm install
+npm run build
+node dist/cli/index.js examples/intro.glimma examples/intro.svg
+```
+
 | Command                 | Purpose                                          |
 | ----------------------- | ------------------------------------------------ |
-| `glimma build <file>`   | Compile to HTML bundle (default `out.html`).     |
+| `glimma build <file>`   | Compile to SVG (default `out.svg`, add `--html` for HTML). |
 | `glimma preview <file>` | Launch local web server with auto‑reload.        |
 | `glimma lint <file>`    | Validate syntax, report line/col errors.         |
 | `glimma init`           | Generate example scripts and CSS theme skeleton. |
