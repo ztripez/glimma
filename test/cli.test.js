@@ -10,7 +10,7 @@ const outFile = path.join('test', 'tmp.svg');
 try { fs.unlinkSync(outFile); } catch {}
 
 test('CLI writes SVG file', () => {
-  execFileSync('node', ['dist/cli/index.js', 'examples/intro.glimma', outFile]);
+  execFileSync('node', ['dist/cli/index.js', 'examples/01-fade.glimma', outFile]);
   const exists = fs.existsSync(outFile);
   assert.ok(exists);
   // Clean up

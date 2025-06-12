@@ -10,7 +10,17 @@ Scene
 
 SceneItem
   = Shape
+  / Group
   / Timeline
+
+Group
+  = 'group' _ id:Identifier _ '{' _ items:GroupItem* '}' _ {
+      return { type: 'Group', id, items };
+    }
+
+GroupItem
+  = Shape
+  / Group
 
 Shape
   = 'shape' _ id:Identifier _ type:Identifier _ attrs:AttributeList? _ {

@@ -61,7 +61,7 @@ Add `--html` if you want an HTML wrapper instead of raw SVG.
 ```bash
 npm install
 npm run build
-node dist/cli/index.js examples/intro.glimma examples/intro.svg
+node dist/cli/index.js examples/01-fade.glimma examples/out.svg
 ```
 
 | Command                 | Purpose                                          |
