@@ -1,8 +1,28 @@
 import type { ASTNode } from '../parser/index.js';
 
+function renderCss(ast: ASTNode): string {
+  const rules: string[] = [];
+  let usesFade = false;
+  for (const scene of ast.scenes) {
+    const timeline = scene.items.find((i: any) => i.type === 'Timeline');
+    if (!timeline) continue;
+    for (const entry of timeline.entries) {
+      if (entry.action === 'fadeIn') {
+        usesFade = true;
+        rules.push(`#${entry.target} { opacity: 0; animation: fadeIn ${entry.dur}s ease-in-out ${entry.time}s forwards; }`);
+      }
+    }
+  }
+  if (usesFade) {
+    rules.unshift('@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }');
+  }
+  return rules.join('\n');
+}
+
 export function renderSvg(ast: ASTNode): string {
   const scenes = ast.scenes.map((scene: any) => renderScene(scene)).join('\n');
-  return `<svg xmlns="http://www.w3.org/2000/svg">\n${scenes}\n</svg>`;
+  const css = renderCss(ast);
+  return `<svg xmlns="http://www.w3.org/2000/svg">\n<style>\n${css}\n</style>\n${scenes}\n</svg>`;
 }
 
 export function renderHtml(ast: ASTNode): string {
@@ -10,7 +30,10 @@ export function renderHtml(ast: ASTNode): string {
 }
 
 function renderScene(scene: any): string {
-  const items = scene.items.map((item: any) => renderItem(item)).join('\n');
+  const items = scene.items
+    .filter((item: any) => item.type === 'Shape')
+    .map((item: any) => renderItem(item))
+    .join('\n');
   return `<g id="${scene.name}">\n${items}\n</g>`;
 }
 
