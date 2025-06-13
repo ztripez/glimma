@@ -11,6 +11,7 @@ GEM
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
+    erb (5.0.1)
     eventmachine (1.2.7)
     ffi (1.17.2)
     ffi (1.17.2-aarch64-linux-gnu)
@@ -160,8 +161,10 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  erb
   jekyll (~> 4.3)
   jekyll-theme-minimal
+  webrick
 
 BUNDLED WITH
    2.6.9

@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="105.00000000000001" height="90" viewBox="0 0 105.00000000000001 90">
 <style>
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
-#rect1 { opacity: 0; animation: fadeIn 2s ease-in-out 0s infinite; }
-#circle1 { opacity: 0; animation: fadeIn 2s ease-in-out 0.5s infinite; }
-#text1 { opacity: 0; animation: fadeIn 2s ease-in-out 1s infinite; }
-#path1 { opacity: 0; animation: fadeIn 2s ease-in-out 1.5s infinite; }
+@keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }\n50% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }\n100% { transform: translate(0px, 0px) rotate(45deg) scale(1, 1); }\n }
+@keyframes transform-1 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }\n55.55555555555556% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }\n100% { transform: translate(0px, 0px) rotate(0deg) scale(1.5, 1.5); }\n }
+#rect1 { opacity: 0; }
+#circle1 { opacity: 0; }
+#text1 { opacity: 0; }
+#path1 { opacity: 0; }
+#rect1 { animation: fadeIn 2s ease-in-out 0s, transform-0 4s linear infinite; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#circle1 { animation: fadeIn 2s ease-in-out 0.5s, transform-1 4.5s linear infinite; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#text1 { animation: fadeIn 2s ease-in-out 1s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#path1 { animation: fadeIn 2s ease-in-out 1.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
 </style>
 <g id="demo">
 <rect id="rect1" x="10" y="10" width="50" height="30" fill="#ff9999" />

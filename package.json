@@ -4,10 +4,14 @@
   "description": "**Plain‑text animation language — Markdown for motion**",
   "main": "dist/cli/index.js",
   "scripts": {
-    "build": "tsc",
+    "prebuild": "npx ts-pegjs src/parser/grammar.pegjs -o src/parser/index.ts",
+    "build": "npm run prebuild && tsc",
     "lint": "tsc --noEmit",
     "test": "npm run build && node --test",
-    "docs": "npm run build && node scripts/build-examples.js"
+    "docs": "npm run build && node scripts/build-examples.js",
+    "watch:all": "chokidar 'src/**/*.ts' 'src/**/*.pegjs' 'examples/**/*.glimma' -c 'npm run docs'",
+    "serve:jekyll": "cd docs && bundle exec jekyll serve --livereload",
+    "dev": "npm-run-all --parallel watch:all serve:jekyll"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +23,10 @@
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.0.1",
+    "@types/svg-path-bbox": "^1.0.0",
+    "chokidar-cli": "^3.0.0",
     "js-yaml": "^4.1.0",
+    "npm-run-all": "^4.1.5",
     "svg-path-bbox": "^1.0.1",
     "ts-pegjs": "^0.3.1",
     "typescript": "^5.8.3"

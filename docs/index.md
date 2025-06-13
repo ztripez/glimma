@@ -19,7 +19,7 @@ Glimma lets you storyboard lightweight SVG/CSS animations with a clear, text-bas
 
 See the [Glimma DSL Specification](spec.md) for language details and the [project README](../README.md) for installation and usage instructions.
 
-For a tour of all sample scripts, visit the [Examples gallery](examples.md).
+For a tour of all sample scripts, visit the [Examples gallery](examples.html).
 Run `npm run docs` to build the SVG previews used throughout the site.
 
 ## Examples

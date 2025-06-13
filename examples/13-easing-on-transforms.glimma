@@ -1,0 +1,6 @@
+scene easing-transforms {
+  shape box rect x=10 y=10 width=40 height=40 fill="#6699cc"
+  timeline:
+    0s: box rotate angle=90 over 2s ease="ease-in"
+    2s: box scale factor=2 over 2s ease="ease-out"
+}

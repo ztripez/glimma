@@ -1,9 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
 <style>
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
-#parent { opacity: 0; animation: fadeIn 2s ease-in-out 0s infinite; }
-#child { opacity: 0; animation: fadeIn 2s ease-in-out 0.5s infinite; }
+@keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }33.33333333333333% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(50px, 0px) rotate(0deg) scale(1, 1); } }
+#parent { opacity: 0; }
+#child { opacity: 0; }
+#parent { animation: fadeIn 2s ease-in-out 0s, transform-0 3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#child { animation: fadeIn 2s ease-in-out 0.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
 </style>
 <g id="demo">
 <g id="parent">
