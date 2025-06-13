@@ -80,6 +80,8 @@ npm run lint
 npm test
 ```
 
+Use `npm run docs` to rebuild the example SVGs used by the GitHub Pages site.
+
 ---
 
 ## Project status
