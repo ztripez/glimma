@@ -4,6 +4,7 @@ scene demo {
     shape child circle cx=30 cy=30 r=10 fill="#88cc88"
   }
   timeline:
-    0s: parent fadeIn over 0.5s
-    0.5s: child fadeOut over 0.5s
+    0s: parent fadeIn over 2s
+    0.5s: child fadeIn over 2s
+    1s: parent move x=50 over 2s
 }

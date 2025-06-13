@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="60" viewBox="0 0 115 60">
+<style>
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }33.33333333333333% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+#box { opacity: 0; }
+#circle { opacity: 0; }
+#box { animation: fadeIn 2s ease-in-out 0s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#circle { animation: fadeIn 2s ease-in-out 0.5s, transform-0 3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+</style>
+<g id="demo">
+<rect id="box" x="10" y="10" width="60" height="40" fill="#6699cc" />
+<circle id="circle" cx="90" cy="30" r="15" fill="#88cc88" />
+</g>
+</svg>

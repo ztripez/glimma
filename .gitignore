@@ -1,3 +1,21 @@
 node_modules/
 dist/
 docs/assets/examples/
+
+vendor/
+
+.jekyll-cache/
+.DS_Store
+# Ignore Jekyll build files
+.sass-cache/
+# Ignore Jekyll configuration files
+_site/
+# Ignore Jekyll plugins
+.jekyll-metadata
+# Ignore Jekyll data files
+.jekyll-cache/
+# Ignore Jekyll logs
+.jekyll-plugins/
+# Ignore Jekyll temporary files
+# Ignore Jekyll drafts
+# Ignore Jekyll archives

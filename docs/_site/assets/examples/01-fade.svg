@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="70" viewBox="0 0 120 70">
+<style>
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+#box { opacity: 0; }
+#label { opacity: 0; }
+#box { animation: fadeIn 2s ease-in-out 0s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#label { animation: fadeIn 2s ease-in-out 0.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+</style>
+<g id="demo">
+<rect id="box" x="10" y="10" width="100" height="50" fill="skyblue" />
+<text id="label" content="Hello" x="20" y="40">Hello</text>
+</g>
+</svg>

@@ -4,8 +4,10 @@ scene demo {
   shape text1 text content="Hi" x=10 y=70
   shape path1 path d="M10 80 L60 80" stroke="black"
   timeline:
-    0s: rect1 fadeIn over 0.5s
-    0.5s: circle1 fadeIn over 0.5s
-    1s: text1 fadeIn over 0.5s
-    1.5s: path1 fadeIn over 0.5s
+    0s: rect1 fadeIn over 2s
+    0.5s: circle1 fadeIn over 2s
+    1s: text1 fadeIn over 2s
+    1.5s: path1 fadeIn over 2s
+    2s: rect1 rotate angle=45 over 2s
+    2.5s: circle1 scale factor=1.5 over 2s
 }
