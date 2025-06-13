@@ -10,8 +10,23 @@ Scene
 
 SceneItem
   = Shape
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
+  / Group
   / Timeline
 
+Group
+  = 'group' _ id:Identifier _ '{' _ items:GroupItem* '}' _ {
+      return { type: 'Group', id, items };
+    }
+
+GroupItem
+  = Shape
+  / Group
+
+=======
+  / Timeline
+
+>>>>>>> main
 Shape
   = 'shape' _ id:Identifier _ type:Identifier _ attrs:AttributeList? _ {
       return { type: 'Shape', id, shapeType: type, attrs: attrs || [] };
@@ -48,4 +63,8 @@ QuotedString
     }
 
 _ "whitespace"
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
   = [ \t\n\r]*
+=======
+  = [ \t\n\r]*
+>>>>>>> main

@@ -10,7 +10,11 @@ const outFile = path.join('test', 'tmp.svg');
 try { fs.unlinkSync(outFile); } catch {}
 
 test('CLI writes SVG file', () => {
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
+  execFileSync('node', ['dist/cli/index.js', 'examples/01-fade.glimma', outFile]);
+=======
   execFileSync('node', ['dist/cli/index.js', 'examples/intro.glimma', outFile]);
+>>>>>>> main
   const exists = fs.existsSync(outFile);
   assert.ok(exists);
   // Clean up

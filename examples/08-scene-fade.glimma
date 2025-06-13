@@ -1,0 +1,11 @@
+scene first {
+  shape box rect x=10 y=10 width=40 height=40 fill="#6699cc"
+  timeline:
+    0s: box fadeIn over 0.5s
+}
+
+scene second {
+  shape other rect x=60 y=10 width=40 height=40 fill="#cc6666"
+  timeline:
+    0s: other fadeIn over 0.5s
+}
