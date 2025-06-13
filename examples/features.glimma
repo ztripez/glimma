@@ -1,0 +1,11 @@
+scene demo {
+  shape rect1 rect x=10 y=10 width=50 height=30 fill="#ff9999"
+  shape circle1 circle cx=80 cy=25 r=15 fill="#99ccff"
+  shape text1 text content="Hi" x=10 y=70
+  shape path1 path d="M10 80 L60 80" stroke="black"
+  timeline:
+    0s: rect1 fadeIn over 0.5s
+    0.5s: circle1 fadeIn over 0.5s
+    1s: text1 fadeIn over 0.5s
+    1.5s: path1 fadeIn over 0.5s
+}

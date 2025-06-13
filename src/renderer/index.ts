@@ -10,14 +10,20 @@ function renderCss(ast: ASTNode): string {
       if (entry.action === 'fadeIn') {
         usesFade = true;
         rules.push(`#${entry.target} { opacity: 0; animation: fadeIn ${entry.dur}s ease-in-out ${entry.time}s forwards; }`);
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
       } else if (entry.action === 'fadeOut') {
         usesFade = true;
         rules.push(`#${entry.target} { opacity: 1; animation: fadeOut ${entry.dur}s ease-in-out ${entry.time}s forwards; }`);
+=======
+>>>>>>> main
       }
     }
   }
   if (usesFade) {
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
     rules.unshift('@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }');
+=======
+>>>>>>> main
     rules.unshift('@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }');
   }
   return rules.join('\n');
@@ -35,7 +41,11 @@ export function renderHtml(ast: ASTNode): string {
 
 function renderScene(scene: any): string {
   const items = scene.items
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
     .filter((item: any) => item.type !== 'Timeline')
+=======
+    .filter((item: any) => item.type === 'Shape')
+>>>>>>> main
     .map((item: any) => renderItem(item))
     .join('\n');
   return `<g id="${scene.name}">\n${items}\n</g>`;
@@ -51,9 +61,12 @@ function renderItem(item: any): string {
       const content = item.attrs.find((a: any) => a.name === 'content')?.value || '';
       return `<text id="${item.id}" ${attrs}>${content}</text>`;
     }
+<<<<<<< fk5a5z-codex/create-mvp-for-plain-text-animation-language
   } else if (item.type === 'Group') {
     const children = item.items.map((c: any) => renderItem(c)).join('\n');
     return `<g id="${item.id}">\n${children}\n</g>`;
+=======
+>>>>>>> main
   }
   return '';
 }
