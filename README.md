@@ -71,6 +71,15 @@ node dist/cli/index.js examples/intro.glimma examples/intro.svg
 | `glimma lint <file>`    | Validate syntax, report line/col errors.         |
 | `glimma init`           | Generate example scripts and CSS theme skeleton. |
 
+## Development
+
+Run TypeScript checks and tests with npm:
+
+```bash
+npm run lint
+npm test
+```
+
 ---
 
 ## Project status
