@@ -2,6 +2,6 @@ scene demo {
   shape first rect x=10 y=10 width=40 height=40 fill="#6699cc"
   shape second rect x=60 y=10 width=40 height=40 fill="#cc6666"
   timeline:
-    0s: first fadeIn over 0.5s
-    0s: second fadeIn over 0.5s
+    0s: first fadeIn over 2s
+    0s: second fadeIn over 2s
 }

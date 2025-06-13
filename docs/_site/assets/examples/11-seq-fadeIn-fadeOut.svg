@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+<style>
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+#box { opacity: 0; animation: fadeIn 2s ease-in-out 0s infinite; }
+#box { opacity: 1; animation: fadeOut 2s ease-in-out 2s infinite; }
+</style>
+<g id="demo">
+<rect id="box" x="10" y="10" width="40" height="40" fill="#6699cc" />
+</g>
+</svg>

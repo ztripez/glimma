@@ -54,8 +54,11 @@ Number
 
 QuotedString
   = '"' chars:([^"\\] / '\\' .)* '"' {
-      return chars.join('');
+      return chars.map((char: any) => char[0] === '\\' ? char[1] : char).join('');
     }
 
+Comment
+  = '#' [^\n]*
+
 _ "whitespace"
-  = [ \t\n\r]*
+  = ( [ \t\n\r] / Comment )*

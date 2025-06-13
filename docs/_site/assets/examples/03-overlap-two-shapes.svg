@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="60" viewBox="0 0 115 60">
+<style>
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+#box { opacity: 0; animation: fadeIn 2s ease-in-out 0s infinite; }
+#circle { opacity: 0; animation: fadeIn 2s ease-in-out 0.5s infinite; }
+</style>
+<g id="demo">
+<rect id="box" x="10" y="10" width="60" height="40" fill="#6699cc" />
+<circle id="circle" cx="90" cy="30" r="15" fill="#88cc88" />
+</g>
+</svg>

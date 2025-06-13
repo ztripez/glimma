@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Glimma</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Glimma" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Glimma" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Glimma" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Glimma","name":"Glimma","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Glimma</a></h1>
+
+        
+
+        <p></p>
+
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="glimma">Glimma</h1>
+
+<p><strong>Plain‑text animation language — Markdown for motion</strong></p>
+
+<p>Glimma lets you storyboard lightweight SVG/CSS animations with a clear, text-based syntax. A single <code class="language-plaintext highlighter-rouge">.glimma</code> file defines shapes, groups, scenes and timelines; the CLI outputs self-contained SVG animations or HTML wrappers.</p>
+
+<h2 id="key-features">Key features</h2>
+
+<ul>
+  <li><strong>Clarity over flash</strong> – perfect for architects, researchers and engineers who need to explain ideas.</li>
+  <li><strong>Plain text source</strong> – version-control friendly and easy to review.</li>
+  <li><strong>Zero‑dependency output</strong> – generates vanilla SVG + CSS; no runtime frameworks.</li>
+  <li><strong>Scenes &amp; groups</strong> – structure complex flows without hand‑animating every part.</li>
+  <li><strong>Theming</strong> – attach a CSS file to match brand guidelines.</li>
+</ul>
+
+<p>See the <a href="spec.md">Glimma DSL Specification</a> for language details and the <a href="../README.md">project README</a> for installation and usage instructions.</p>
+
+<p>For a tour of all sample scripts, visit the <a href="examples.md">Examples gallery</a>.
+Run <code class="language-plaintext highlighter-rouge">npm run docs</code> to build the SVG previews used throughout the site.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>The repository includes a gallery of sample scripts under <code class="language-plaintext highlighter-rouge">/examples</code>. Build one with the CLI:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx glimma build examples/01-fade.glimma examples/out.svg
+</code></pre></div></div>
+
+<h3 id="01-fadeglimma"><code class="language-plaintext highlighter-rouge">01-fade.glimma</code></h3>
+
+<pre><code class="language-glimma">scene demo {
+  shape box rect x=10 y=10 width=100 height=50 fill="skyblue"
+  shape label text content="Hello" x=20 y=40
+  timeline:
+    0s: box fadeIn over 1s
+    0.5s: label fadeIn over 1s
+}
+</code></pre>
+
+<p>The resulting SVG is viewable in any browser:</p>
+
+<p><img src="assets/examples/features.svg" alt="Fade example" /></p>
+
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

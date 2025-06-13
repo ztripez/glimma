@@ -1,5 +1,6 @@
 scene demo {
   shape wheel rect x=20 y=20 width=40 height=40 fill="#cc6666"
   timeline:
-    0s: wheel fadeIn over 0.5s
+    0s: wheel fadeIn over 2s
+    1s: wheel rotate angle=360 over 2s
 }

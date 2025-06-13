@@ -1,4 +1,4 @@
-declare module 'pegjs' {
-  const peg: any;
-  export = peg;
+interface ASTNode {
+  type: string;
+  [key: string]: any;
 }
