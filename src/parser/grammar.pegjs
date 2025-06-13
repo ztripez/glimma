@@ -47,7 +47,9 @@ OverClause
   = "over" _ dur:Number "s" { return { type: "OverClause", dur: dur }; }
 
 AttributeList
-  = _ attrList:Attribute+ { return attrList; }
+  = _ head:Attribute tail:(_ Attribute)* {
+      return [head, ...tail.map(t => t[1])];
+    }
 
 Attribute
   = name:Identifier "=" value:Value {

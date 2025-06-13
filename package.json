@@ -4,7 +4,7 @@
   "description": "**Plain‑text animation language — Markdown for motion**",
   "main": "dist/cli/index.js",
   "scripts": {
-    "prebuild": "npx ts-pegjs src/parser/grammar.pegjs -o src/parser/index.ts",
+    "prebuild": "npx pegjs --plugin ts-pegjs --extra-options '{\"tspegjs\":{\"customHeader\":\"// @ts-nocheck\"}}' -o src/parser/index.ts src/parser/grammar.pegjs",
     "build": "npm run prebuild && tsc",
     "lint": "tsc --noEmit",
     "test": "npm run build && node --test",
