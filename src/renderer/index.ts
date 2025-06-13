@@ -213,7 +213,7 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
     }
 
     for (const [target, animations] of targetAnimationGroups.entries()) {
-      rules.push(`#${target} { animation: ${animations.join(', ')}; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }`);
+      rules.push(`#${target} { animation: ${animations.join(', ')}; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }`);
     }
   }
 
