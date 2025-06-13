@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tsc --noEmit",
-    "test": "npm run build && node --test"
+    "test": "npm run build && node --test",
+    "docs": "npm run build && node scripts/build-examples.js"
   },
   "keywords": [],
   "author": "",
