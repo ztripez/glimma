@@ -23,5 +23,5 @@ Running `npm run docs` will regenerate all SVG previews and this page.
 {{ example.code }}
 ```
 
-<img src="{{ example.svg_path | relative_url }}" alt="{{ example.name }}" width="100%" />
+<object type="image/svg+xml" data="{{ example.svg_path | relative_url }}" width="100%" aria-label="{{ example.name }}"></object>
 {% endfor %}
