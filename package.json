@@ -5,6 +5,7 @@
   "main": "dist/cli/index.js",
   "scripts": {
     "build": "tsc",
+    "lint": "tsc --noEmit",
     "test": "npm run build && node --test"
   },
   "keywords": [],
