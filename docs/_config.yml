@@ -1,4 +1,6 @@
 theme: jekyll-theme-minimal
 title: Glimma
+url: "https://ztripez.github.io"
+baseurl: "/glimma"
 exclude:
   - vendor/

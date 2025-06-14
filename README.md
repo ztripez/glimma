@@ -1,5 +1,8 @@
 # Glimma
 
+# Docs
+https://ztripez.github.io/glimma/
+
 **Plain‑text animation language — Markdown for motion**
 
 Glimma lets you storyboard lightweight SVG/CSS animations in the same way Markdown lets you write documents. One `.glimma` file defines shapes, groups, scenes and timelines; the CLI turns it into a self-contained SVG animation by default (add `--html` to wrap in an HTML page).
