@@ -3,8 +3,8 @@ name: Deploy Jekyll docs site to GitHub Pages
 
 on:
   # Builds only on a new published release (or when run manually)
-  release:
-    types: [published]
+  # release:
+  #   types: [published]
   workflow_dispatch:
 
 # GitHub Pages permissions
