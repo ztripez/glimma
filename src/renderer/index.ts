@@ -220,7 +220,7 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
   return [...keyframes.values(), ...rules].join('\n');
 }
 
-export function renderSvg(ast: ASTNode): string {
+export function renderSvg(ast: ASTNode, themeCSS: string = ''): string {
   const scenes = ast.scenes.map((scene: SceneNode) => renderScene(scene)).join('\n');
   const totalDuration = ast.scenes.reduce((max: number, scene: SceneNode) => {
     const timeline = scene.items.find((i): i is TimelineNode => i.type === 'Timeline');
@@ -228,16 +228,20 @@ export function renderSvg(ast: ASTNode): string {
     const lastEntry = timeline.entries[timeline.entries.length - 1];
     return Math.max(max, lastEntry.time + lastEntry.dur);
   }, 10);
-  const css = renderCss(ast, totalDuration);
+  const animationCSS = renderCss(ast, totalDuration);
   const { minX, minY, maxX, maxY } = getBoundingBox(ast);
   const width = maxX - minX;
   const height = maxY - minY;
   const padding = 10;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width + padding * 2}" height="${height + padding * 2}" viewBox="${minX - padding} ${minY - padding} ${width + padding * 2} ${height + padding * 2}">\n<style>\n${css}\n</style>\n${scenes}\n</svg>`;
+  
+  // Combine theme CSS with generated animation CSS
+  const allCSS = [themeCSS, animationCSS].filter(Boolean).join('\n\n');
+  
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width + padding * 2}" height="${height + padding * 2}" viewBox="${minX - padding} ${minY - padding} ${width + padding * 2} ${height + padding * 2}">\n<style>\n${allCSS}\n</style>\n${scenes}\n</svg>`;
 }
 
-export function renderHtml(ast: ASTNode): string {
-  return `<!DOCTYPE html>\n<html><body>\n${renderSvg(ast)}\n</body></html>`;
+export function renderHtml(ast: ASTNode, themeCSS: string = ''): string {
+  return `<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Glimma Animation</title>\n</head>\n<body>\n${renderSvg(ast, themeCSS)}\n</body>\n</html>`;
 }
 
 function renderScene(scene: SceneNode): string {
