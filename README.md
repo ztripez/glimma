@@ -35,7 +35,7 @@ echo "" > hello.glimma
 
 ```glimma
 scene Intro {
-  shape box rect  w=120 h=80 fill=#6699cc
+  shape box rect  width=120 height=80 fill=#6699cc
   shape title text content="Hello, Glimma!" x=10 y=100
 
   timeline:
