@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+
+    <style>
+      /* Fullscreen layout for playground */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        overflow: hidden;
+      }
+      
+      .fullscreen-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .header-bar {
+        background: #24292f;
+        color: white;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #30363d;
+        flex-shrink: 0;
+        z-index: 1000;
+      }
+      
+      .header-bar h1 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      
+      .header-bar h1 a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      .header-bar .nav-links {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      
+      .header-bar .nav-links a {
+        color: #f0f6fc;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+      
+      .header-bar .nav-links a:hover {
+        background: #30363d;
+      }
+      
+      .content-area {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      /* Override the playground container styles for fullscreen */
+      #playground-container {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #playground-layout {
+        height: calc(100vh - 120px); /* Account for header and toolbar */
+      }
+      
+      /* Dark theme adjustments */
+      .header-bar {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      }
+      
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        .header-bar .nav-links {
+          display: none;
+        }
+        
+        #playground-layout {
+          height: calc(100vh - 100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullscreen-container">
+      <header class="header-bar">
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        
+        <nav class="nav-links">
+          <a href="{{ "/" | relative_url }}">Home</a>
+          <a href="{{ "/examples.html" | relative_url }}">Examples</a>
+          <a href="{{ "/spec.md" | relative_url }}">Spec</a>
+          <a href="https://github.com/{{ site.github.repository_nwo }}" target="_blank">GitHub</a>
+        </nav>
+      </header>
+      
+      <main class="content-area">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>

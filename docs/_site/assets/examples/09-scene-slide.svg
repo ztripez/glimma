@@ -4,8 +4,8 @@
 @keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }50% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(150px, 0px) rotate(0deg) scale(1, 1); } }
 @keyframes transform-1 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }50% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(60px, 0px) rotate(0deg) scale(1, 1); } }
 #box { opacity: 0; }
-#box { animation: fadeIn 2s ease-in-out 0s, transform-0 4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
-#other { animation: transform-1 4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#box { animation: fadeIn 2s ease-in-out 0s, transform-0 4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#other { animation: transform-1 4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
 </style>
 <g id="first">
 <rect id="box" x="10" y="10" width="40" height="40" fill="#6699cc" />
