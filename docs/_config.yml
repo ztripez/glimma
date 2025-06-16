@@ -4,3 +4,14 @@ url: "https://ztripez.github.io"
 baseurl: "/glimma"
 exclude:
   - vendor/
+
+# Custom navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Playground
+    url: /playground.html
+  - title: Examples
+    url: /examples.html
+  - title: Specification
+    url: /spec.md

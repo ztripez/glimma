@@ -3,7 +3,11 @@ import { strict as assert } from 'node:assert';
 import { parse, SyntaxError } from '../dist/parser/index.js';
 
 test('parser reports syntax errors with line/column info', () => {
-  const invalidGlimma = `scene demo {`;
+  const invalidGlimma = `scene demo {
+  shape box rect x=10 y=10
+  timeline
+    0s: box fadeIn over 2s
+}`;
 
   assert.throws(
     () => parse(invalidGlimma),

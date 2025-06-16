@@ -1,0 +1,369 @@
+# Demonstrating all advanced features: scenes, groups, complex timing, easing, transforms
+
+scene TitleSlide {
+  # Main title with sophisticated entrance
+  shape titleBg rect x=50 y=150 width=700 height=120 fill="#1a1a2e" opacity=0
+  shape titleText text content="The Future of Animation" x=400 y=220 fill="#e94560" opacity=0
+  shape subtitle text content="Built with Glimma - Markdown for Motion" x=400 y=260 fill="#ffffff" opacity=0
+  
+  # Decorative elements with complex animations
+  group titleDecoration {
+    shape leftAccent rect x=30 y=140 width=8 height=140 fill="#e94560"
+    shape rightAccent rect x=762 y=140 width=8 height=140 fill="#e94560"
+    shape topLine path d="M50 140 L750 140" stroke="#e94560" opacity=0
+    shape bottomLine path d="M50 280 L750 280" stroke="#e94560" opacity=0
+  }
+  
+  # Animated background particles
+  group backgroundParticles {
+    shape particle1 circle cx=100 cy=80 r=3 fill="#e94560" opacity=0
+    shape particle2 circle cx=200 cy=120 r=2 fill="#ffffff" opacity=0
+    shape particle3 circle cx=650 cy=90 r=4 fill="#e94560" opacity=0
+    shape particle4 circle cx=720 cy=110 r=2 fill="#ffffff" opacity=0
+    shape particle5 circle cx=150 cy=320 r=3 fill="#e94560" opacity=0
+    shape particle6 circle cx=600 cy=350 r=2 fill="#ffffff" opacity=0
+  }
+
+  timeline:
+    # Background setup
+    0s: titleBg fadeIn over 1s ease="ease-out"
+    
+    # Staggered particle entrance
+    0.5s: particle1 fadeIn over 0.8s ease="ease-in-out"
+    0.7s: particle2 fadeIn over 0.8s ease="ease-in-out"
+    0.9s: particle3 fadeIn over 0.8s ease="ease-in-out"
+    1.1s: particle4 fadeIn over 0.8s ease="ease-in-out"
+    1.3s: particle5 fadeIn over 0.8s ease="ease-in-out"
+    1.5s: particle6 fadeIn over 0.8s ease="ease-in-out"
+    
+    # Title entrance with scaling
+    1s: titleText fadeIn over 1.2s ease="ease-out"
+    1s: titleText scale factor=1.1 over 0.3s ease="ease-out"
+    1.3s: titleText scale factor=1 over 0.5s ease="ease-in-out"
+    
+    # Subtitle with delay
+    2s: subtitle fadeIn over 1s ease="ease-out"
+    
+    # Decorative lines sweep in
+    2.5s: topLine fadeIn over 0.8s ease="ease-in-out"
+    2.7s: bottomLine fadeIn over 0.8s ease="ease-in-out"
+    
+    # Group rotation animation
+    3s: titleDecoration rotate angle=2 over 2s ease="ease-in-out"
+    5s: titleDecoration rotate angle=-1 over 2s ease="ease-in-out"
+    
+    # Particle floating animation
+    4s: particle1 move x=120 y=60 over 3s ease="ease-in-out"
+    4.2s: particle2 move x=180 y=140 over 3s ease="ease-in-out"
+    4.4s: particle3 move x=670 y=70 over 3s ease="ease-in-out"
+    4.6s: particle4 move x=700 y=130 over 3s ease="ease-in-out"
+    4.8s: particle5 move x=170 y=340 over 3s ease="ease-in-out"
+    5s: particle6 move x=580 y=330 over 3s ease="ease-in-out"
+}
+
+scene FeatureShowcase {
+  # Scene transition background
+  shape sceneBg rect x=0 y=0 width=800 height=400 fill="#0f0f23" opacity=0
+  
+  # Feature grid layout
+  group featureGrid {
+    # Feature 1: Declarative Syntax
+    shape feature1Bg rect x=50 y=50 width=300 height=120 fill="#16213e" opacity=0
+    shape feature1Title text content="Declarative Syntax" x=200 y=80 fill="#e94560" opacity=0
+    shape feature1Desc text content="Write animations like markdown" x=200 y=110 fill="#ffffff" opacity=0
+    shape feature1Icon circle cx=80 cy=90 r=20 fill="#e94560" opacity=0
+    
+    # Feature 2: Zero Dependencies  
+    shape feature2Bg rect x=450 y=50 width=300 height=120 fill="#16213e" opacity=0
+    shape feature2Title text content="Zero Dependencies" x=600 y=80 fill="#e94560" opacity=0
+    shape feature2Desc text content="Pure SVG + CSS output" x=600 y=110 fill="#ffffff" opacity=0
+    shape feature2Icon rect x=560 y=70 width=40 height=40 fill="#e94560" opacity=0
+    
+    # Feature 3: Professional Animations
+    shape feature3Bg rect x=50 y=230 width=300 height=120 fill="#16213e" opacity=0
+    shape feature3Title text content="Professional Easing" x=200 y=260 fill="#e94560" opacity=0
+    shape feature3Desc text content="Built-in easing functions" x=200 y=290 fill="#ffffff" opacity=0
+    shape feature3Icon path d="M60 270 Q100 250 140 270 T220 270" stroke="#e94560" fill="none" opacity=0
+    
+    # Feature 4: Scene Management
+    shape feature4Bg rect x=450 y=230 width=300 height=120 fill="#16213e" opacity=0  
+    shape feature4Title text content="Scene Management" x=600 y=260 fill="#e94560" opacity=0
+    shape feature4Desc text content="Complex storytelling flows" x=600 y=290 fill="#ffffff" opacity=0
+    shape feature4Icon rect x=570 y=250 width=20 height=30 fill="#e94560" opacity=0
+    shape feature4Icon2 rect x=600 y=250 width=20 height=30 fill="#e94560" opacity=0
+    shape feature4Icon3 rect x=630 y=250 width=20 height=30 fill="#e94560" opacity=0
+  }
+
+  timeline:
+    # Scene background fade in
+    0s: sceneBg fadeIn over 0.8s ease="ease-out"
+    
+    # Feature boxes cascade in with staggered timing
+    0.5s: feature1Bg fadeIn over 0.6s ease="ease-out"
+    0.5s: feature1Bg move x=50 y=30 over 0.8s ease="ease-out"
+    0.8s: feature1Bg move x=50 y=50 over 0.5s ease="ease-in-out"
+    
+    0.7s: feature2Bg fadeIn over 0.6s ease="ease-out"
+    0.7s: feature2Bg move x=450 y=30 over 0.8s ease="ease-out"
+    1s: feature2Bg move x=450 y=50 over 0.5s ease="ease-in-out"
+    
+    0.9s: feature3Bg fadeIn over 0.6s ease="ease-out"
+    0.9s: feature3Bg move x=50 y=210 over 0.8s ease="ease-out"
+    1.2s: feature3Bg move x=50 y=230 over 0.5s ease="ease-in-out"
+    
+    1.1s: feature4Bg fadeIn over 0.6s ease="ease-out"
+    1.1s: feature4Bg move x=450 y=210 over 0.8s ease="ease-out"
+    1.4s: feature4Bg move x=450 y=230 over 0.5s ease="ease-in-out"
+    
+    # Text and icons appear with scaling effects
+    1.5s: feature1Title fadeIn over 0.8s ease="ease-out"
+    1.5s: feature1Title scale factor=1.2 over 0.3s ease="ease-out"
+    1.8s: feature1Title scale factor=1 over 0.4s ease="ease-in-out"
+    1.9s: feature1Desc fadeIn over 0.6s ease="ease-out"
+    2s: feature1Icon fadeIn over 0.5s ease="ease-out"
+    2s: feature1Icon scale factor=1.3 over 0.4s ease="ease-out"
+    2.4s: feature1Icon scale factor=1 over 0.6s ease="ease-in-out"
+    
+    1.7s: feature2Title fadeIn over 0.8s ease="ease-out"
+    1.7s: feature2Title scale factor=1.2 over 0.3s ease="ease-out"
+    2s: feature2Title scale factor=1 over 0.4s ease="ease-in-out"
+    2.1s: feature2Desc fadeIn over 0.6s ease="ease-out"
+    2.2s: feature2Icon fadeIn over 0.5s ease="ease-out"
+    2.2s: feature2Icon rotate angle=15 over 0.8s ease="ease-in-out"
+    3s: feature2Icon rotate angle=0 over 0.8s ease="ease-in-out"
+    
+    1.9s: feature3Title fadeIn over 0.8s ease="ease-out"
+    1.9s: feature3Title scale factor=1.2 over 0.3s ease="ease-out"
+    2.2s: feature3Title scale factor=1 over 0.4s ease="ease-in-out"
+    2.3s: feature3Desc fadeIn over 0.6s ease="ease-out"
+    2.4s: feature3Icon fadeIn over 0.5s ease="ease-out"
+    
+    2.1s: feature4Title fadeIn over 0.8s ease="ease-out"
+    2.1s: feature4Title scale factor=1.2 over 0.3s ease="ease-out"
+    2.4s: feature4Title scale factor=1 over 0.4s ease="ease-in-out"
+    2.5s: feature4Desc fadeIn over 0.6s ease="ease-out"
+    2.6s: feature4Icon fadeIn over 0.4s ease="ease-out"
+    2.8s: feature4Icon2 fadeIn over 0.4s ease="ease-out"
+    3s: feature4Icon3 fadeIn over 0.4s ease="ease-out"
+    
+    # Complex group animations
+    4s: featureGrid rotate angle=1 over 2s ease="ease-in-out"
+    6s: featureGrid rotate angle=-0.5 over 2s ease="ease-in-out"
+    8s: featureGrid rotate angle=0 over 1.5s ease="ease-in-out"
+}
+
+scene TechnicalDemo {
+  # Dark tech-themed background
+  shape techBg rect x=0 y=0 width=800 height=400 fill="#0a0a0a" opacity=0
+  
+  # Code-like visualization
+  group codeVisualization {
+    shape codeBlock1 rect x=50 y=50 width=200 height=20 fill="#1e1e1e" opacity=0
+    shape codeLine1 rect x=60 y=55 width=120 height=10 fill="#61dafb" opacity=0
+    shape codeLine2 rect x=60 y=67 width=80 height=8 fill="#98d982" opacity=0
+    
+    shape codeBlock2 rect x=300 y=80 width=250 height=30 fill="#1e1e1e" opacity=0
+    shape codeLine3 rect x=310 y=88 width=150 height=10 fill="#f92672" opacity=0
+    shape codeLine4 rect x=310 y=100 width=100 height=8 fill="#fd971f" opacity=0
+    
+    shape codeBlock3 rect x=100 y=150 width=180 height=25 fill="#1e1e1e" opacity=0
+    shape codeLine5 rect x=110 y=158 width=90 height=10 fill="#ae81ff" opacity=0
+  }
+  
+  # Animated arrows showing data flow
+  group dataFlow {
+    shape arrow1 path d="M260 60 L290 60" stroke="#61dafb" opacity=0
+    shape arrow2 path d="M560 95 L590 120" stroke="#f92672" opacity=0
+    shape arrow3 path d="M290 162 L320 140" stroke="#ae81ff" opacity=0
+  }
+  
+  # Output visualization
+  group outputViz {
+    shape outputBox rect x=600 y=120 width=150 height=100 fill="#2d2d2d" opacity=0
+    shape outputTitle text content="SVG Output" x=675 y=145 fill="#ffffff" opacity=0
+    shape outputIcon circle cx=650 cy=180 r=15 fill="#61dafb" opacity=0
+    shape outputIcon2 rect x=670 y=165 width=30 height=30 fill="#98d982" opacity=0
+  }
+  
+  # Performance metrics
+  group performanceMetrics {
+    shape metricsBg rect x=50 y=250 width=700 height=100 fill="#1a1a2e" opacity=0
+    shape metricsTitle text content="Performance Metrics" x=400 y=280 fill="#e94560" opacity=0
+    
+    shape metric1 text content="0kb Runtime" x=150 y=310 fill="#98d982" opacity=0
+    shape metric2 text content="Pure CSS" x=300 y=310 fill="#61dafb" opacity=0
+    shape metric3 text content="60fps Smooth" x=450 y=310 fill="#fd971f" opacity=0
+    shape metric4 text content="Mobile Ready" x=600 y=310 fill="#f92672" opacity=0
+  }
+
+  timeline:
+    # Background setup
+    0s: techBg fadeIn over 1s ease="ease-out"
+    
+    # Code blocks appear with typing effect simulation
+    0.8s: codeBlock1 fadeIn over 0.5s ease="ease-out"
+    1s: codeLine1 fadeIn over 0.3s ease="ease-out"
+    1s: codeLine1 scale factor=0.1 over 0.1s ease="linear"
+    1.1s: codeLine1 scale factor=1 over 0.6s ease="ease-out"
+    1.3s: codeLine2 fadeIn over 0.3s ease="ease-out"
+    1.3s: codeLine2 scale factor=0.1 over 0.1s ease="linear"
+    1.4s: codeLine2 scale factor=1 over 0.4s ease="ease-out"
+    
+    1.5s: codeBlock2 fadeIn over 0.5s ease="ease-out"
+    1.7s: codeLine3 fadeIn over 0.3s ease="ease-out"
+    1.7s: codeLine3 scale factor=0.1 over 0.1s ease="linear"
+    1.8s: codeLine3 scale factor=1 over 0.6s ease="ease-out"
+    2s: codeLine4 fadeIn over 0.3s ease="ease-out"
+    2s: codeLine4 scale factor=0.1 over 0.1s ease="linear"
+    2.1s: codeLine4 scale factor=1 over 0.4s ease="ease-out"
+    
+    2.2s: codeBlock3 fadeIn over 0.5s ease="ease-out"
+    2.4s: codeLine5 fadeIn over 0.3s ease="ease-out"
+    2.4s: codeLine5 scale factor=0.1 over 0.1s ease="linear"
+    2.5s: codeLine5 scale factor=1 over 0.6s ease="ease-out"
+    
+    # Data flow arrows animate in sequence
+    3s: arrow1 fadeIn over 0.8s ease="ease-out"
+    3.2s: arrow2 fadeIn over 0.8s ease="ease-out"
+    3.4s: arrow3 fadeIn over 0.8s ease="ease-out"
+    
+    # Output visualization
+    3.8s: outputBox fadeIn over 0.6s ease="ease-out"
+    3.8s: outputBox scale factor=1.1 over 0.4s ease="ease-out"
+    4.2s: outputBox scale factor=1 over 0.5s ease="ease-in-out"
+    4.2s: outputTitle fadeIn over 0.8s ease="ease-out"
+    4.5s: outputIcon fadeIn over 0.5s ease="ease-out"
+    4.5s: outputIcon rotate angle=360 over 2s ease="ease-in-out"
+    4.7s: outputIcon2 fadeIn over 0.5s ease="ease-out"
+    4.7s: outputIcon2 rotate angle=-180 over 1.5s ease="ease-in-out"
+    
+    # Performance metrics cascade
+    5s: metricsBg fadeIn over 0.8s ease="ease-out"
+    5.2s: metricsTitle fadeIn over 0.6s ease="ease-out"
+    
+    5.5s: metric1 fadeIn over 0.5s ease="ease-out"
+    5.5s: metric1 move x=150 y=290 over 0.3s ease="ease-out"
+    5.8s: metric1 move x=150 y=310 over 0.4s ease="ease-in-out"
+    
+    5.7s: metric2 fadeIn over 0.5s ease="ease-out"
+    5.7s: metric2 move x=300 y=290 over 0.3s ease="ease-out"
+    6s: metric2 move x=300 y=310 over 0.4s ease="ease-in-out"
+    
+    5.9s: metric3 fadeIn over 0.5s ease="ease-out"
+    5.9s: metric3 move x=450 y=290 over 0.3s ease="ease-out"
+    6.2s: metric3 move x=450 y=310 over 0.4s ease="ease-in-out"
+    
+    6.1s: metric4 fadeIn over 0.5s ease="ease-out"
+    6.1s: metric4 move x=600 y=290 over 0.3s ease="ease-out"
+    6.4s: metric4 move x=600 y=310 over 0.4s ease="ease-in-out"
+    
+    # Grand finale - complex group choreography
+    7s: codeVisualization rotate angle=5 over 2s ease="ease-in-out"
+    7s: dataFlow scale factor=1.2 over 1.5s ease="ease-out"
+    7s: outputViz move x=550 y=100 over 2s ease="ease-in-out"
+    8.5s: dataFlow scale factor=1 over 1s ease="ease-in-out"
+    9s: codeVisualization rotate angle=0 over 1.5s ease="ease-in-out"
+    9s: outputViz move x=600 y=120 over 1.5s ease="ease-in-out"
+}
+
+scene GrandFinale {
+  # Epic conclusion with all elements
+  shape finaleBg rect x=0 y=0 width=800 height=400 fill="#0f0f23" opacity=0
+  
+  # Central logo/brand element
+  group centerPiece {
+    shape logoBase circle cx=400 cy=200 r=80 fill="#1a1a2e" opacity=0
+    shape logoAccent circle cx=400 cy=200 r=60 fill="#e94560" opacity=0
+    shape logoCore circle cx=400 cy=200 r=40 fill="#ffffff" opacity=0
+    shape logoText text content="GLIMMA" x=400 y=210 fill="#1a1a2e" opacity=0
+  }
+  
+  # Orbiting elements
+  group orbitingElements {
+    shape orbit1 circle cx=300 cy=120 r=8 fill="#61dafb" opacity=0
+    shape orbit2 circle cx=500 cy=120 r=8 fill="#98d982" opacity=0
+    shape orbit3 circle cx=550 cy=280 r=8 fill="#fd971f" opacity=0
+    shape orbit4 circle cx=250 cy=280 r=8 fill="#f92672" opacity=0
+    shape orbit5 circle cx=200 cy=200 r=6 fill="#ae81ff" opacity=0
+    shape orbit6 circle cx=600 cy=200 r=6 fill="#61dafb" opacity=0
+  }
+  
+  # Radiating lines
+  group radiatingLines {
+    shape line1 path d="M400 200 L320 130" stroke="#e94560" opacity=0
+    shape line2 path d="M400 200 L480 130" stroke="#e94560" opacity=0
+    shape line3 path d="M400 200 L530 270" stroke="#e94560" opacity=0
+    shape line4 path d="M400 200 L270 270" stroke="#e94560" opacity=0
+    shape line5 path d="M400 200 L220 200" stroke="#e94560" opacity=0
+    shape line6 path d="M400 200 L580 200" stroke="#e94560" opacity=0
+  }
+  
+  # Final message
+  group finalMessage {
+    shape messageBox rect x=250 y=320 width=300 height=60 fill="#1a1a2e" opacity=0
+    shape messageText text content="Animation. Simplified." x=400 y=350 fill="#ffffff" opacity=0
+    shape messageSubtext text content="Built for the future" x=400 y=370 fill="#e94560" opacity=0
+  }
+
+  timeline:
+    # Background setup
+    0s: finaleBg fadeIn over 1.5s ease="ease-out"
+    
+    # Center piece dramatic entrance
+    1s: logoBase fadeIn over 0.8s ease="ease-out"
+    1s: logoBase scale factor=1.5 over 0.5s ease="ease-out"
+    1.5s: logoBase scale factor=1 over 0.8s ease="ease-in-out"
+    
+    1.5s: logoAccent fadeIn over 0.6s ease="ease-out"
+    1.5s: logoAccent scale factor=1.3 over 0.4s ease="ease-out"
+    1.9s: logoAccent scale factor=1 over 0.6s ease="ease-in-out"
+    
+    2s: logoCore fadeIn over 0.5s ease="ease-out"
+    2s: logoCore scale factor=1.2 over 0.3s ease="ease-out"
+    2.3s: logoCore scale factor=1 over 0.5s ease="ease-in-out"
+    
+    2.5s: logoText fadeIn over 0.8s ease="ease-out"
+    2.5s: logoText scale factor=1.4 over 0.4s ease="ease-out"
+    2.9s: logoText scale factor=1 over 0.6s ease="ease-in-out"
+    
+    # Radiating lines sweep out
+    3s: line1 fadeIn over 0.6s ease="ease-out"
+    3.1s: line2 fadeIn over 0.6s ease="ease-out"
+    3.2s: line3 fadeIn over 0.6s ease="ease-out"
+    3.3s: line4 fadeIn over 0.6s ease="ease-out"
+    3.4s: line5 fadeIn over 0.6s ease="ease-out"
+    3.5s: line6 fadeIn over 0.6s ease="ease-out"
+    
+    # Orbiting elements complex choreography
+    3.8s: orbit1 fadeIn over 0.5s ease="ease-out"
+    3.8s: orbit1 move x=480 y=280 over 4s ease="ease-in-out"
+    4s: orbit2 fadeIn over 0.5s ease="ease-out"
+    4s: orbit2 move x=320 y=280 over 4s ease="ease-in-out"
+    4.2s: orbit3 fadeIn over 0.5s ease="ease-out"
+    4.2s: orbit3 move x=320 y=120 over 4s ease="ease-in-out"
+    4.4s: orbit4 fadeIn over 0.5s ease="ease-out"
+    4.4s: orbit4 move x=480 y=120 over 4s ease="ease-in-out"
+    4.6s: orbit5 fadeIn over 0.5s ease="ease-out"
+    4.6s: orbit5 move x=600 y=200 over 4s ease="ease-in-out"
+    4.8s: orbit6 fadeIn over 0.5s ease="ease-out"
+    4.8s: orbit6 move x=200 y=200 over 4s ease="ease-in-out"
+    
+    # Center piece rotation during orbit
+    5s: centerPiece rotate angle=360 over 4s ease="linear"
+    
+    # Final message appears
+    6s: messageBox fadeIn over 1s ease="ease-out"
+    6s: messageBox move x=250 y=340 over 0.5s ease="ease-out"
+    6.5s: messageBox move x=250 y=320 over 0.8s ease="ease-in-out"
+    
+    7s: messageText fadeIn over 0.8s ease="ease-out"
+    7.5s: messageSubtext fadeIn over 0.8s ease="ease-out"
+    
+    # Epic finale - everything pulses together
+    9s: centerPiece scale factor=1.1 over 1s ease="ease-in-out"
+    9s: orbitingElements scale factor=1.2 over 1s ease="ease-in-out"
+    9s: finalMessage scale factor=1.05 over 1s ease="ease-in-out"
+    10s: centerPiece scale factor=1 over 1s ease="ease-in-out"
+    10s: orbitingElements scale factor=1 over 1s ease="ease-in-out"
+    10s: finalMessage scale factor=1 over 1s ease="ease-in-out"
+}

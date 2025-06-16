@@ -1,0 +1,309 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="420" viewBox="-10 -10 820 420">
+<style>
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }55.55555555555556% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }72.22222222222221% { transform: translate(0px, 0px) rotate(0deg) scale(1.1, 1.1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-1 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }42.857142857142854% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }71.42857142857143% { transform: translate(0px, 0px) rotate(2deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(-1deg) scale(1, 1); } }
+@keyframes transform-2 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }57.14285714285714% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(120px, 60px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-3 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }58.333333333333336% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(180px, 140px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-4 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }59.45945945945946% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(670px, 70px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-5 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }60.526315789473685% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(700px, 130px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-6 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }61.53846153846154% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(170px, 340px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-7 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }62.5% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(580px, 330px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-8 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }38.46153846153846% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }61.53846153846154% { transform: translate(50px, 30px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(50px, 50px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-9 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }46.666666666666664% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }66.66666666666666% { transform: translate(450px, 30px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(450px, 50px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-10 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }52.94117647058824% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }70.58823529411765% { transform: translate(50px, 210px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(50px, 230px) rotate(0deg) scale(1, 1); }100.00000000000003% { transform: translate(50px, 210px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-11 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }57.89473684210527% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }73.68421052631578% { transform: translate(450px, 210px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(450px, 230px) rotate(0deg) scale(1, 1); }100.00000000000003% { transform: translate(450px, 210px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-12 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }68.18181818181817% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }81.81818181818181% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-13 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }70.83333333333334% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }83.33333333333334% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-14 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }73.07692307692307% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }84.6153846153846% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); }84.61538461538461% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-15 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }66.66666666666666% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }80% { transform: translate(0px, 0px) rotate(0deg) scale(1.3, 1.3); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-16 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }75.00000000000001% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }85.71428571428572% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-17 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }57.89473684210527% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }78.94736842105263% { transform: translate(0px, 0px) rotate(15deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(15deg) scale(1, 1); } }
+@keyframes transform-18 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }42.10526315789473% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }63.1578947368421% { transform: translate(0px, 0px) rotate(1deg) scale(1, 1); animation-timing-function: ease-in-out; }84.21052631578947% { transform: translate(0px, 0px) rotate(-0.5deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(-0.5deg) scale(1, 1); } }
+@keyframes transform-19 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }58.823529411764696% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }64.70588235294117% { transform: translate(0px, 0px) rotate(0deg) scale(0.1, 0.1); animation-timing-function: ease-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-20 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }72.22222222222223% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }77.77777777777779% { transform: translate(0px, 0px) rotate(0deg) scale(0.1, 0.1); animation-timing-function: ease-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-21 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }70.83333333333334% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }75% { transform: translate(0px, 0px) rotate(0deg) scale(0.1, 0.1); animation-timing-function: ease-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-22 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }80% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }84.00000000000001% { transform: translate(0px, 0px) rotate(0deg) scale(0.1, 0.1); animation-timing-function: ease-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-23 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }77.41935483870968% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }80.64516129032258% { transform: translate(0px, 0px) rotate(0deg) scale(0.1, 0.1); animation-timing-function: ease-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-24 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }80.85106382978722% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }89.36170212765957% { transform: translate(0px, 0px) rotate(0deg) scale(1.1, 1.1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-25 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }69.23076923076923% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(360deg) scale(1, 1); } }
+@keyframes transform-26 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }75.80645161290323% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(-180deg) scale(1, 1); } }
+@keyframes transform-27 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }88.70967741935483% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }93.54838709677419% { transform: translate(150px, 290px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(150px, 310px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-28 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }89.0625% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }93.75% { transform: translate(300px, 290px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(300px, 310px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-29 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }89.39393939393939% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }93.93939393939394% { transform: translate(450px, 290px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(450px, 310px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-30 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }89.70588235294116% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }94.11764705882352% { transform: translate(600px, 290px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(600px, 310px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-31 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }66.66666666666666% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }85.71428571428571% { transform: translate(0px, 0px) rotate(5deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(5deg) scale(1, 1); } }
+@keyframes transform-32 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }73.68421052631578% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }89.47368421052632% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-33 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }66.66666666666666% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }85.71428571428571% { transform: translate(550px, 100px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(600px, 120px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-34 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }43.47826086956522% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }65.21739130434783% { transform: translate(0px, 0px) rotate(0deg) scale(1.5, 1.5); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-35 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }60% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }76% { transform: translate(0px, 0px) rotate(0deg) scale(1.3, 1.3); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-36 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }71.42857142857143% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }82.14285714285714% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-37 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }71.42857142857143% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }82.85714285714285% { transform: translate(0px, 0px) rotate(0deg) scale(1.4, 1.4); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-38 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }48.717948717948715% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(480px, 280px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-39 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }50% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(320px, 280px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-40 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }51.21951219512195% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(320px, 120px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-41 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }52.38095238095239% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(480px, 120px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-42 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }53.48837209302325% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(600px, 200px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-43 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }54.54545454545454% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(200px, 200px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-44 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }45.45454545454545% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }81.81818181818183% { transform: translate(0px, 0px) rotate(360deg) scale(1, 1); animation-timing-function: ease-in-out; }90.9090909090909% { transform: translate(0px, 0px) rotate(360deg) scale(1.1, 1.1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(360deg) scale(1, 1); } }
+@keyframes transform-45 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }82.19178082191782% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }89.04109589041096% { transform: translate(250px, 340px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(250px, 320px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-46 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }81.81818181818183% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }90.9090909090909% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-47 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }81.81818181818183% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }90.9090909090909% { transform: translate(0px, 0px) rotate(0deg) scale(1.05, 1.05); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); } }
+#titleBg { opacity: 0; }
+#particle1 { opacity: 0; }
+#particle2 { opacity: 0; }
+#particle3 { opacity: 0; }
+#titleText { opacity: 0; }
+#particle4 { opacity: 0; }
+#particle5 { opacity: 0; }
+#particle6 { opacity: 0; }
+#subtitle { opacity: 0; }
+#topLine { opacity: 0; }
+#bottomLine { opacity: 0; }
+#titleBg { animation: fadeIn 1s ease-out 0s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#particle1 { animation: fadeIn 0.8s ease-in-out 0.5s, transform-2 7s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#particle2 { animation: fadeIn 0.8s ease-in-out 0.7s, transform-3 7.2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#particle3 { animation: fadeIn 0.8s ease-in-out 0.9s, transform-4 7.4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#titleText { animation: fadeIn 1.2s ease-out 1s, transform-0 1.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#particle4 { animation: fadeIn 0.8s ease-in-out 1.1s, transform-5 7.6s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#particle5 { animation: fadeIn 0.8s ease-in-out 1.3s, transform-6 7.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#particle6 { animation: fadeIn 0.8s ease-in-out 1.5s, transform-7 8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#subtitle { animation: fadeIn 1s ease-out 2s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#topLine { animation: fadeIn 0.8s ease-in-out 2.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#bottomLine { animation: fadeIn 0.8s ease-in-out 2.7s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#titleDecoration { animation: transform-1 7s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#sceneBg { opacity: 0; }
+#feature1Bg { opacity: 0; }
+#feature2Bg { opacity: 0; }
+#feature3Bg { opacity: 0; }
+#feature4Bg { opacity: 0; }
+#feature1Title { opacity: 0; }
+#feature2Title { opacity: 0; }
+#feature1Desc { opacity: 0; }
+#feature3Title { opacity: 0; }
+#feature1Icon { opacity: 0; }
+#feature2Desc { opacity: 0; }
+#feature4Title { opacity: 0; }
+#feature2Icon { opacity: 0; }
+#feature3Desc { opacity: 0; }
+#feature3Icon { opacity: 0; }
+#feature4Desc { opacity: 0; }
+#feature4Icon { opacity: 0; }
+#feature4Icon2 { opacity: 0; }
+#feature4Icon3 { opacity: 0; }
+#sceneBg { animation: fadeIn 0.8s ease-out 0s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature1Bg { animation: fadeIn 0.6s ease-out 0.5s, transform-8 1.3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature2Bg { animation: fadeIn 0.6s ease-out 0.7s, transform-9 1.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature3Bg { animation: fadeIn 0.6s ease-out 0.9s, transform-10 1.7s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature4Bg { animation: fadeIn 0.6s ease-out 1.1s, transform-11 1.9s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature1Title { animation: fadeIn 0.8s ease-out 1.5s, transform-12 2.2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature2Title { animation: fadeIn 0.8s ease-out 1.7s, transform-13 2.4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature1Desc { animation: fadeIn 0.6s ease-out 1.9s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature3Title { animation: fadeIn 0.8s ease-out 1.9s, transform-14 2.6s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature1Icon { animation: fadeIn 0.5s ease-out 2s, transform-15 3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature2Desc { animation: fadeIn 0.6s ease-out 2.1s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature4Title { animation: fadeIn 0.8s ease-out 2.1s, transform-16 2.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature2Icon { animation: fadeIn 0.5s ease-out 2.2s, transform-17 3.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature3Desc { animation: fadeIn 0.6s ease-out 2.3s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature3Icon { animation: fadeIn 0.5s ease-out 2.4s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature4Desc { animation: fadeIn 0.6s ease-out 2.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature4Icon { animation: fadeIn 0.4s ease-out 2.6s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature4Icon2 { animation: fadeIn 0.4s ease-out 2.8s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#feature4Icon3 { animation: fadeIn 0.4s ease-out 3s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#featureGrid { animation: transform-18 9.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#techBg { opacity: 0; }
+#codeBlock1 { opacity: 0; }
+#codeLine1 { opacity: 0; }
+#codeLine2 { opacity: 0; }
+#codeBlock2 { opacity: 0; }
+#codeLine3 { opacity: 0; }
+#codeLine4 { opacity: 0; }
+#codeBlock3 { opacity: 0; }
+#codeLine5 { opacity: 0; }
+#arrow1 { opacity: 0; }
+#arrow2 { opacity: 0; }
+#arrow3 { opacity: 0; }
+#outputBox { opacity: 0; }
+#outputTitle { opacity: 0; }
+#outputIcon { opacity: 0; }
+#outputIcon2 { opacity: 0; }
+#metricsBg { opacity: 0; }
+#metricsTitle { opacity: 0; }
+#metric1 { opacity: 0; }
+#metric2 { opacity: 0; }
+#metric3 { opacity: 0; }
+#metric4 { opacity: 0; }
+#techBg { animation: fadeIn 1s ease-out 0s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeBlock1 { animation: fadeIn 0.5s ease-out 0.8s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeLine1 { animation: fadeIn 0.3s ease-out 1s, transform-19 1.7000000000000002s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeLine2 { animation: fadeIn 0.3s ease-out 1.3s, transform-20 1.7999999999999998s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeBlock2 { animation: fadeIn 0.5s ease-out 1.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeLine3 { animation: fadeIn 0.3s ease-out 1.7s, transform-21 2.4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeLine4 { animation: fadeIn 0.3s ease-out 2s, transform-22 2.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeBlock3 { animation: fadeIn 0.5s ease-out 2.2s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeLine5 { animation: fadeIn 0.3s ease-out 2.4s, transform-23 3.1s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#arrow1 { animation: fadeIn 0.8s ease-out 3s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#arrow2 { animation: fadeIn 0.8s ease-out 3.2s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#arrow3 { animation: fadeIn 0.8s ease-out 3.4s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#outputBox { animation: fadeIn 0.6s ease-out 3.8s, transform-24 4.7s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#outputTitle { animation: fadeIn 0.8s ease-out 4.2s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#outputIcon { animation: fadeIn 0.5s ease-out 4.5s, transform-25 6.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#outputIcon2 { animation: fadeIn 0.5s ease-out 4.7s, transform-26 6.2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#metricsBg { animation: fadeIn 0.8s ease-out 5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#metricsTitle { animation: fadeIn 0.6s ease-out 5.2s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#metric1 { animation: fadeIn 0.5s ease-out 5.5s, transform-27 6.2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#metric2 { animation: fadeIn 0.5s ease-out 5.7s, transform-28 6.4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#metric3 { animation: fadeIn 0.5s ease-out 5.9s, transform-29 6.6000000000000005s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#metric4 { animation: fadeIn 0.5s ease-out 6.1s, transform-30 6.800000000000001s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#codeVisualization { animation: transform-31 10.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#dataFlow { animation: transform-32 9.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#outputViz { animation: transform-33 10.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#finaleBg { opacity: 0; }
+#logoBase { opacity: 0; }
+#logoAccent { opacity: 0; }
+#logoCore { opacity: 0; }
+#logoText { opacity: 0; }
+#line1 { opacity: 0; }
+#line2 { opacity: 0; }
+#line3 { opacity: 0; }
+#line4 { opacity: 0; }
+#line5 { opacity: 0; }
+#line6 { opacity: 0; }
+#orbit1 { opacity: 0; }
+#orbit2 { opacity: 0; }
+#orbit3 { opacity: 0; }
+#orbit4 { opacity: 0; }
+#orbit5 { opacity: 0; }
+#orbit6 { opacity: 0; }
+#messageBox { opacity: 0; }
+#messageText { opacity: 0; }
+#messageSubtext { opacity: 0; }
+#finaleBg { animation: fadeIn 1.5s ease-out 0s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#logoBase { animation: fadeIn 0.8s ease-out 1s, transform-34 2.3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#logoAccent { animation: fadeIn 0.6s ease-out 1.5s, transform-35 2.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#logoCore { animation: fadeIn 0.5s ease-out 2s, transform-36 2.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#logoText { animation: fadeIn 0.8s ease-out 2.5s, transform-37 3.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#line1 { animation: fadeIn 0.6s ease-out 3s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#line2 { animation: fadeIn 0.6s ease-out 3.1s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#line3 { animation: fadeIn 0.6s ease-out 3.2s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#line4 { animation: fadeIn 0.6s ease-out 3.3s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#line5 { animation: fadeIn 0.6s ease-out 3.4s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#line6 { animation: fadeIn 0.6s ease-out 3.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbit1 { animation: fadeIn 0.5s ease-out 3.8s, transform-38 7.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbit2 { animation: fadeIn 0.5s ease-out 4s, transform-39 8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbit3 { animation: fadeIn 0.5s ease-out 4.2s, transform-40 8.2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbit4 { animation: fadeIn 0.5s ease-out 4.4s, transform-41 8.4s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbit5 { animation: fadeIn 0.5s ease-out 4.6s, transform-42 8.6s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbit6 { animation: fadeIn 0.5s ease-out 4.8s, transform-43 8.8s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#messageBox { animation: fadeIn 1s ease-out 6s, transform-45 7.3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#messageText { animation: fadeIn 0.8s ease-out 7s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#messageSubtext { animation: fadeIn 0.8s ease-out 7.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#centerPiece { animation: transform-44 11s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#orbitingElements { animation: transform-46 11s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#finalMessage { animation: transform-47 11s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+</style>
+<g id="TitleSlide">
+<rect id="titleBg" x="50" y="150" width="700" height="120" fill="#1a1a2e" opacity="0" />
+<text id="titleText" content="The Future of Animation" x="400" y="220" fill="#e94560" opacity="0">The Future of Animation</text>
+<text id="subtitle" content="Built with Glimma - Markdown for Motion" x="400" y="260" fill="#ffffff" opacity="0">Built with Glimma - Markdown for Motion</text>
+<g id="titleDecoration">
+<rect id="leftAccent" x="30" y="140" width="8" height="140" fill="#e94560" />
+<rect id="rightAccent" x="762" y="140" width="8" height="140" fill="#e94560" />
+<path id="topLine" d="M50 140 L750 140" stroke="#e94560" opacity="0" />
+<path id="bottomLine" d="M50 280 L750 280" stroke="#e94560" opacity="0" />
+</g>
+<g id="backgroundParticles">
+<circle id="particle1" cx="100" cy="80" r="3" fill="#e94560" opacity="0" />
+<circle id="particle2" cx="200" cy="120" r="2" fill="#ffffff" opacity="0" />
+<circle id="particle3" cx="650" cy="90" r="4" fill="#e94560" opacity="0" />
+<circle id="particle4" cx="720" cy="110" r="2" fill="#ffffff" opacity="0" />
+<circle id="particle5" cx="150" cy="320" r="3" fill="#e94560" opacity="0" />
+<circle id="particle6" cx="600" cy="350" r="2" fill="#ffffff" opacity="0" />
+</g>
+</g>
+<g id="FeatureShowcase">
+<rect id="sceneBg" x="0" y="0" width="800" height="400" fill="#0f0f23" opacity="0" />
+<g id="featureGrid">
+<rect id="feature1Bg" x="50" y="50" width="300" height="120" fill="#16213e" opacity="0" />
+<text id="feature1Title" content="Declarative Syntax" x="200" y="80" fill="#e94560" opacity="0">Declarative Syntax</text>
+<text id="feature1Desc" content="Write animations like markdown" x="200" y="110" fill="#ffffff" opacity="0">Write animations like markdown</text>
+<circle id="feature1Icon" cx="80" cy="90" r="20" fill="#e94560" opacity="0" />
+<rect id="feature2Bg" x="450" y="50" width="300" height="120" fill="#16213e" opacity="0" />
+<text id="feature2Title" content="Zero Dependencies" x="600" y="80" fill="#e94560" opacity="0">Zero Dependencies</text>
+<text id="feature2Desc" content="Pure SVG + CSS output" x="600" y="110" fill="#ffffff" opacity="0">Pure SVG + CSS output</text>
+<rect id="feature2Icon" x="560" y="70" width="40" height="40" fill="#e94560" opacity="0" />
+<rect id="feature3Bg" x="50" y="230" width="300" height="120" fill="#16213e" opacity="0" />
+<text id="feature3Title" content="Professional Easing" x="200" y="260" fill="#e94560" opacity="0">Professional Easing</text>
+<text id="feature3Desc" content="Built-in easing functions" x="200" y="290" fill="#ffffff" opacity="0">Built-in easing functions</text>
+<path id="feature3Icon" d="M60 270 Q100 250 140 270 T220 270" stroke="#e94560" fill="none" opacity="0" />
+<rect id="feature4Bg" x="450" y="230" width="300" height="120" fill="#16213e" opacity="0" />
+<text id="feature4Title" content="Scene Management" x="600" y="260" fill="#e94560" opacity="0">Scene Management</text>
+<text id="feature4Desc" content="Complex storytelling flows" x="600" y="290" fill="#ffffff" opacity="0">Complex storytelling flows</text>
+<rect id="feature4Icon" x="570" y="250" width="20" height="30" fill="#e94560" opacity="0" />
+<rect id="feature4Icon2" x="600" y="250" width="20" height="30" fill="#e94560" opacity="0" />
+<rect id="feature4Icon3" x="630" y="250" width="20" height="30" fill="#e94560" opacity="0" />
+</g>
+</g>
+<g id="TechnicalDemo">
+<rect id="techBg" x="0" y="0" width="800" height="400" fill="#0a0a0a" opacity="0" />
+<g id="codeVisualization">
+<rect id="codeBlock1" x="50" y="50" width="200" height="20" fill="#1e1e1e" opacity="0" />
+<rect id="codeLine1" x="60" y="55" width="120" height="10" fill="#61dafb" opacity="0" />
+<rect id="codeLine2" x="60" y="67" width="80" height="8" fill="#98d982" opacity="0" />
+<rect id="codeBlock2" x="300" y="80" width="250" height="30" fill="#1e1e1e" opacity="0" />
+<rect id="codeLine3" x="310" y="88" width="150" height="10" fill="#f92672" opacity="0" />
+<rect id="codeLine4" x="310" y="100" width="100" height="8" fill="#fd971f" opacity="0" />
+<rect id="codeBlock3" x="100" y="150" width="180" height="25" fill="#1e1e1e" opacity="0" />
+<rect id="codeLine5" x="110" y="158" width="90" height="10" fill="#ae81ff" opacity="0" />
+</g>
+<g id="dataFlow">
+<path id="arrow1" d="M260 60 L290 60" stroke="#61dafb" opacity="0" />
+<path id="arrow2" d="M560 95 L590 120" stroke="#f92672" opacity="0" />
+<path id="arrow3" d="M290 162 L320 140" stroke="#ae81ff" opacity="0" />
+</g>
+<g id="outputViz">
+<rect id="outputBox" x="600" y="120" width="150" height="100" fill="#2d2d2d" opacity="0" />
+<text id="outputTitle" content="SVG Output" x="675" y="145" fill="#ffffff" opacity="0">SVG Output</text>
+<circle id="outputIcon" cx="650" cy="180" r="15" fill="#61dafb" opacity="0" />
+<rect id="outputIcon2" x="670" y="165" width="30" height="30" fill="#98d982" opacity="0" />
+</g>
+<g id="performanceMetrics">
+<rect id="metricsBg" x="50" y="250" width="700" height="100" fill="#1a1a2e" opacity="0" />
+<text id="metricsTitle" content="Performance Metrics" x="400" y="280" fill="#e94560" opacity="0">Performance Metrics</text>
+<text id="metric1" content="0kb Runtime" x="150" y="310" fill="#98d982" opacity="0">0kb Runtime</text>
+<text id="metric2" content="Pure CSS" x="300" y="310" fill="#61dafb" opacity="0">Pure CSS</text>
+<text id="metric3" content="60fps Smooth" x="450" y="310" fill="#fd971f" opacity="0">60fps Smooth</text>
+<text id="metric4" content="Mobile Ready" x="600" y="310" fill="#f92672" opacity="0">Mobile Ready</text>
+</g>
+</g>
+<g id="GrandFinale">
+<rect id="finaleBg" x="0" y="0" width="800" height="400" fill="#0f0f23" opacity="0" />
+<g id="centerPiece">
+<circle id="logoBase" cx="400" cy="200" r="80" fill="#1a1a2e" opacity="0" />
+<circle id="logoAccent" cx="400" cy="200" r="60" fill="#e94560" opacity="0" />
+<circle id="logoCore" cx="400" cy="200" r="40" fill="#ffffff" opacity="0" />
+<text id="logoText" content="GLIMMA" x="400" y="210" fill="#1a1a2e" opacity="0">GLIMMA</text>
+</g>
+<g id="orbitingElements">
+<circle id="orbit1" cx="300" cy="120" r="8" fill="#61dafb" opacity="0" />
+<circle id="orbit2" cx="500" cy="120" r="8" fill="#98d982" opacity="0" />
+<circle id="orbit3" cx="550" cy="280" r="8" fill="#fd971f" opacity="0" />
+<circle id="orbit4" cx="250" cy="280" r="8" fill="#f92672" opacity="0" />
+<circle id="orbit5" cx="200" cy="200" r="6" fill="#ae81ff" opacity="0" />
+<circle id="orbit6" cx="600" cy="200" r="6" fill="#61dafb" opacity="0" />
+</g>
+<g id="radiatingLines">
+<path id="line1" d="M400 200 L320 130" stroke="#e94560" opacity="0" />
+<path id="line2" d="M400 200 L480 130" stroke="#e94560" opacity="0" />
+<path id="line3" d="M400 200 L530 270" stroke="#e94560" opacity="0" />
+<path id="line4" d="M400 200 L270 270" stroke="#e94560" opacity="0" />
+<path id="line5" d="M400 200 L220 200" stroke="#e94560" opacity="0" />
+<path id="line6" d="M400 200 L580 200" stroke="#e94560" opacity="0" />
+</g>
+<g id="finalMessage">
+<rect id="messageBox" x="250" y="320" width="300" height="60" fill="#1a1a2e" opacity="0" />
+<text id="messageText" content="Animation. Simplified." x="400" y="350" fill="#ffffff" opacity="0">Animation. Simplified.</text>
+<text id="messageSubtext" content="Built for the future" x="400" y="370" fill="#e94560" opacity="0">Built for the future</text>
+</g>
+</g>
+</svg>

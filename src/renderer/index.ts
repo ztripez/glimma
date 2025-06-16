@@ -94,6 +94,48 @@ function getBoundingBox(ast: ASTNode): { minX: number, minY: number, maxX: numbe
 function renderCss(ast: ASTNode, totalDuration: number): string {
   const rules: string[] = [];
   const keyframes = new Map<string, string>();
+  
+  // Calculate individual scene durations and add scene transitions
+  const sceneDurations: { name: string, duration: number, startTime: number }[] = [];
+  let currentTime = 0;
+  
+  for (const scene of ast.scenes) {
+    const timeline = scene.items.find((i): i is TimelineNode => i.type === 'Timeline');
+    if (timeline && timeline.entries.length > 0) {
+      const lastEntry = timeline.entries.reduce((latest, entry) => 
+        (entry.time + entry.dur) > (latest.time + latest.dur) ? entry : latest
+      );
+      const sceneDuration = lastEntry.time + lastEntry.dur;
+      sceneDurations.push({ name: scene.name, duration: sceneDuration, startTime: currentTime });
+      currentTime += sceneDuration + 3; // include fade durations and 1s gap
+    } else {
+      sceneDurations.push({ name: scene.name, duration: 5, startTime: currentTime }); // Default 5s for scenes without timeline
+      currentTime += 8; // 5s scene + fade durations + 1s gap
+    }
+  }
+  
+  // Add scene-level transitions
+  for (let i = 0; i < sceneDurations.length; i++) {
+    const scene = sceneDurations[i];
+    // All scenes start hidden
+    rules.push(`#${scene.name} { opacity: 0; }`);
+    
+    // Scene fades in at its start time
+    rules.push(`#${scene.name} { animation: sceneTransition-${i} ${scene.duration + 2}s ease-in-out ${scene.startTime}s; animation-fill-mode: both; }`);
+    
+    // Create keyframes for scene transition (fade in, stay visible, fade out)
+    const fadeInPercent = (1 / (scene.duration + 2)) * 100; // Fade in over 1s
+    const fadeOutPercent = ((scene.duration + 1) / (scene.duration + 2)) * 100; // Start fade out 1s before end
+    
+    keyframes.set(`sceneTransition-${i}`, 
+      `@keyframes sceneTransition-${i} { 
+        0% { opacity: 0; } 
+        ${fadeInPercent.toFixed(1)}% { opacity: 1; } 
+        ${fadeOutPercent.toFixed(1)}% { opacity: 1; } 
+        100% { opacity: 0; } 
+      }`
+    );
+  }
 
   const usesFadeIn = ast.scenes.some(s => s.items.some(i => i.type === 'Timeline' && (i as TimelineNode).entries.some(e => e.action === 'fadeIn')));
   const usesFadeOut = ast.scenes.some(s => s.items.some(i => i.type === 'Timeline' && (i as TimelineNode).entries.some(e => e.action === 'fadeOut')));
@@ -107,7 +149,9 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
 
   let animCounter = 0;
 
-  for (const scene of ast.scenes) {
+  for (let sceneIndex = 0; sceneIndex < ast.scenes.length; sceneIndex++) {
+    const scene = ast.scenes[sceneIndex];
+    const sceneInfo = sceneDurations[sceneIndex];
     const timeline = scene.items.find((i): i is TimelineNode => i.type === 'Timeline');
     if (!timeline) continue;
 
@@ -126,7 +170,9 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
             initialOpacitySet.add(entry.target);
           }
           if (!targetAnimationGroups.has(entry.target)) targetAnimationGroups.set(entry.target, []);
-          targetAnimationGroups.get(entry.target)!.push(`fadeIn ${entry.dur}s ${ease} ${entry.time}s`);
+          // Adjust timing to account for scene start time
+          const adjustedTime = sceneInfo.startTime + entry.time + 1; // +1 for scene fade-in
+          targetAnimationGroups.get(entry.target)!.push(`fadeIn ${entry.dur}s ${ease} ${adjustedTime}s`);
           break;
         }
         case 'fadeOut': {
@@ -136,7 +182,9 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
             initialOpacitySet.add(entry.target);
           }
           if (!targetAnimationGroups.has(entry.target)) targetAnimationGroups.set(entry.target, []);
-          targetAnimationGroups.get(entry.target)!.push(`fadeOut ${entry.dur}s ${ease} ${entry.time}s`);
+          // Adjust timing to account for scene start time
+          const adjustedTime = sceneInfo.startTime + entry.time + 1; // +1 for scene fade-in
+          targetAnimationGroups.get(entry.target)!.push(`fadeOut ${entry.dur}s ${ease} ${adjustedTime}s`);
           break;
         }
         case 'move':
@@ -209,11 +257,13 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
 
       keyframes.set(animName, `@keyframes ${animName} { ${keyframeSteps} }`);
       if (!targetAnimationGroups.has(target)) targetAnimationGroups.set(target, []);
-      targetAnimationGroups.get(target)!.push(`${animName} ${duration}s linear`);
+      // Adjust timing to account for scene start time
+      const adjustedStartTime = sceneInfo.startTime + 1; // +1 for scene fade-in
+      targetAnimationGroups.get(target)!.push(`${animName} ${duration}s linear ${adjustedStartTime}s`);
     }
 
     for (const [target, animations] of targetAnimationGroups.entries()) {
-      rules.push(`#${target} { animation: ${animations.join(', ')}; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }`);
+      rules.push(`#${target} { animation: ${animations.join(', ')}; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }`);
     }
   }
 

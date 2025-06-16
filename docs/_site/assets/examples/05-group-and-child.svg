@@ -4,8 +4,8 @@
 @keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }33.33333333333333% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(50px, 0px) rotate(0deg) scale(1, 1); } }
 #parent { opacity: 0; }
 #child { opacity: 0; }
-#parent { animation: fadeIn 2s ease-in-out 0s, transform-0 3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
-#child { animation: fadeIn 2s ease-in-out 0.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#parent { animation: fadeIn 2s ease-in-out 0s, transform-0 3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#child { animation: fadeIn 2s ease-in-out 0.5s; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
 </style>
 <g id="demo">
 <g id="parent">

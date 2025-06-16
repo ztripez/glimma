@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="70" viewBox="0 0 120 70">
 <style>
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }\n33.33333333333333% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }\n100% { transform: translate(50px, 0px) rotate(0deg) scale(1, 1); }\n }
-@keyframes transform-1 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }\n42.857142857142854% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }\n100% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); }\n }
+@keyframes transform-0 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }33.33333333333333% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(50px, 0px) rotate(0deg) scale(1, 1); } }
+@keyframes transform-1 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); }42.857142857142854% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: linear; }100% { transform: translate(0px, 0px) rotate(0deg) scale(1.2, 1.2); } }
 #box { opacity: 0; }
 #label { opacity: 0; }
-#box { animation: fadeIn 2s ease-in-out 0s, transform-0 3s linear infinite; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
-#label { animation: fadeIn 2s ease-in-out 0.5s, transform-1 3.5s linear infinite; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#box { animation: fadeIn 2s ease-in-out 0s, transform-0 3s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#label { animation: fadeIn 2s ease-in-out 0.5s, transform-1 3.5s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
 </style>
 <g id="demo">
 <rect id="box" x="10" y="10" width="100" height="50" fill="skyblue" />

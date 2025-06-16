@@ -4,10 +4,10 @@
 @keyframes transform-1 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in; }100% { transform: translate(0px, 50px) rotate(0deg) scale(1, 1); } }
 @keyframes transform-2 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-out; }100% { transform: translate(0px, 50px) rotate(0deg) scale(1, 1); } }
 @keyframes transform-3 { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1); animation-timing-function: ease-in-out; }100% { transform: translate(0px, 50px) rotate(0deg) scale(1, 1); } }
-#a { animation: transform-0 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
-#b { animation: transform-1 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
-#c { animation: transform-2 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
-#d { animation: transform-3 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; }
+#a { animation: transform-0 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#b { animation: transform-1 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#c { animation: transform-2 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
+#d { animation: transform-3 2s linear; transform-origin: center; transform-box: fill-box; animation-fill-mode: both; animation-iteration-count: infinite; }
 </style>
 <g id="demo">
 <rect id="a" x="10" y="10" width="20" height="20" fill="#6699cc" />
