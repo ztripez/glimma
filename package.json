@@ -7,11 +7,12 @@
     "prebuild": "npx pegjs --plugin ts-pegjs --extra-options '{\"tspegjs\":{\"customHeader\":\"// @ts-nocheck\"}}' -o src/parser/index.ts src/parser/grammar.pegjs",
     "build": "npm run prebuild && tsc",
     "lint": "tsc --noEmit",
-    "test": "npm run build && node --test",
+    "test": "npm run build && node --test test/*.test.js && npm run test:e2e",
     "docs": "npm run build && node scripts/build-examples.js",
     "watch:all": "chokidar 'src/**/*.ts' 'src/**/*.pegjs' 'examples/**/*.glimma' -c 'npm run docs'",
     "serve:jekyll": "cd docs && bundle exec jekyll serve --livereload",
-    "dev": "npm-run-all --parallel watch:all serve:jekyll"
+    "dev": "npm-run-all --parallel watch:all serve:jekyll",
+    "test:e2e": "playwright test"
   },
   "keywords": [],
   "author": "",
@@ -21,15 +22,17 @@
     "glimma": "dist/cli/index.js"
   },
   "devDependencies": {
+    "@playwright/test": "^1.53.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.0.1",
     "@types/svg-path-bbox": "^1.0.0",
     "chokidar-cli": "^3.0.0",
     "js-yaml": "^4.1.0",
     "npm-run-all": "^4.1.5",
+    "pegjs": "^0.10.0",
+    "playwright": "^1.53.0",
     "svg-path-bbox": "^1.0.1",
     "ts-pegjs": "^0.3.1",
-    "pegjs": "^0.10.0",
     "typescript": "^5.8.3"
   }
 }
