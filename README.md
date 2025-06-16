@@ -76,10 +76,11 @@ node dist/cli/index.js examples/01-fade.glimma examples/out.svg
 
 ## Development
 
-Run TypeScript checks and tests with npm:
+Run TypeScript checks and tests (including Playwright animations) with npm. Run `npx playwright install` once to download browsers:
 
 ```bash
 npm run lint
+npx playwright install
 npm test
 ```
 
