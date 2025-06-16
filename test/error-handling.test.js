@@ -4,8 +4,8 @@ import { parse, SyntaxError } from '../dist/parser/index.js';
 
 test('parser reports syntax errors with line/column info', () => {
   const invalidGlimma = `scene demo {
-  shape box invalid_syntax
-  timeline:
+  shape box rect x=10 y=10
+  timeline
     0s: box fadeIn over 2s
 }`;
 

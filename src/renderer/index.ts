@@ -107,10 +107,10 @@ function renderCss(ast: ASTNode, totalDuration: number): string {
       );
       const sceneDuration = lastEntry.time + lastEntry.dur;
       sceneDurations.push({ name: scene.name, duration: sceneDuration, startTime: currentTime });
-      currentTime += sceneDuration + 1; // Add 1s gap between scenes
+      currentTime += sceneDuration + 3; // include fade durations and 1s gap
     } else {
       sceneDurations.push({ name: scene.name, duration: 5, startTime: currentTime }); // Default 5s for scenes without timeline
-      currentTime += 6;
+      currentTime += 8; // 5s scene + fade durations + 1s gap
     }
   }
   
